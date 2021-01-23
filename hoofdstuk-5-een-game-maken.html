@@ -1,0 +1,12 @@
+<html>
+    <body style="background-color: darkblue;">
+        <img id="spook" style="position: absolute;" src="spook.png">
+    </body>
+    <script>
+        var timer=window.setInterval(moveSpook, 1000);
+        function moveSpook(){
+            document.getElementById("spook").style.left=Math.random()*900+"px";
+            document.getElementById("spook").style.top=Math.random()*600+"px";
+        }
+    </script>
+</html>
