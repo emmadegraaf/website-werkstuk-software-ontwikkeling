@@ -17,7 +17,12 @@
  img {
      vertical-align: middle;
      width: 500px;
- }
+     border:8px solid black;
+     margin:8px; height:90px;
+    }
+ 
+
+
 
  p {font-size: 1rem;
      color:#12c512;
