@@ -1,5 +1,17 @@
 <html>
-    <body style="background-color: darkblue;">
+    <head>
+    <script>
+      var number = 0;
+      function myFunction() {
+
+        number++;
+        document.getElementById("myText").innerHTML = number;
+      }
+    </script>
+  </head>
+    <body style="background-color: darkblue;" onmousedown="myFunction()">
+
+        <h1 style="color:white" >aantal keer misgeklikt: <span id="myText"></span></h1>
         <a href="hoofdstuk-5-tekst.html">
         <img id="spook" style="position: absolute;" src="spook.png">
          </a>
