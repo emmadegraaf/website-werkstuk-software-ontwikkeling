@@ -1,50 +1,83 @@
 <html>
-    <head>
-        <meta charset=utf-8>
-        <title>de website maken</title>
-        <link rel=stylesheet href=style.css>
-    </head>        
-    <body>
-       <h1>de website maken</h1>
-       <p>een uitleg hoe we deze website hebben gemaakt</p>
-       <br>Elke website die je kan bedenken wordt in dezelfde taal geschreven, deze taal heet HTML, HTML staat voor Hyper Tekst Markup Language.
-       <br>Met Hyper text bedoelen ze bijvoorbeeld een klikbare link en met markup bedoelen ze dat je de tekst kan stylen.
-       <br>Als een website online staat, kun je hem bekijken in een browser, zoals Chrome, Safari, Firefox of Microsoft Edge.
-       <br>HTML-pagina's zijn gevuld met onderdelen, zoals tekst, afbeeldingen, video's, tabellen, titels, knoppen of links. 
-       <br>Elk van deze onderdelen noemen we een element.
-       <br>Elk element krijgt een tag en inhoud.
-       <br>De tag vertelt de browser wat voor element het is, bijvoorbeeld een afbeelding.
-       <br>De inhoud vertelt de browser welke afbeelding hij moet laten zien.
-       <hr>
-       <h2>index.html</h2>
-       <br>De website begon heel simpel met bestandsnaam index.html met daarin tags.
-       <br>In HTML hebben alle elementen een begintag en de meeste hebben ook een sluittag.
-       <br>Tags staan altijd tussen punthaken &lt; en &gt;. bijvoorbeeld:
-       &lt;html&gt;
-       &lt;p&gt; hoi &lt;/p&gt;
-       &lt;/html&gt;
-       <br>Sla deze file op met de bestandnaam index.html en open deze dan met je browser, je ziet meteen of het is gelukt.
 
-       <h2>style.css</h2>     
-       <br>De styling van de website doen we in een file genaamd "style.css", de afkorting css staat voor Cascading Style Sheet. 
-       <br>Daarin kun je het uiterlijk van alle links, letters en nog veel meer in een keer veranderen. 
-       <br>We bepalen in deze file bijvoorbeeld hoe een titel eruit moet zien, dit doen we door de gewenste styling aan de tag te koppelen.
+<head>
+    <meta charset=utf-8>
+    <title>Hoofdstuk 4</title>
+    <link rel=stylesheet href=style.css>
+</head>
 
-       <br>Deze tags gebruiken we dan weer in de index.html we dan geen styling meer te doen want dat is al geregeld in de style.css file.
+<body>
+    <h1>De website maken</h1>
+    <h2>Een uitleg hoe we deze website hebben gemaakt</h2>
+    <p>Elke website die je kan bedenken wordt in dezelfde taal geschreven, deze taal heet HTML, HTML staat voor Hyper
+        Tekst Markup Language.
+        Met Hyper text bedoelen ze bijvoorbeeld een klikbare link en met markup bedoelen ze dat je de tekst kan stylen.
+        Als een website online staat, kun je hem bekijken in een browser, zoals Chrome, Safari, Firefox of Microsoft
+        Edge.
+        HTML-pagina's zijn gevuld met onderdelen, zoals tekst, afbeeldingen, video's, tabellen, titels, knoppen of
+        links.
+        Elk van deze onderdelen noemen we een element.
+        Elk element krijgt een tag en inhoud.
+        De tag vertelt de browser wat voor element het is, bijvoorbeeld een afbeelding.
+        De inhoud vertelt de browser welke afbeelding hij moet laten zien.
+    </p>
+    <p>
+        De website begon heel simpel met een bestand genaamd "index.html" met daarin tags.
+        In HTML hebben alle elementen een begintag en de meeste hebben ook een sluittag.
+        Tags staan altijd tussen punthaken &lt; en &gt;.
+        Je kan dit zelf proberen met het programma kladblok, open dit programma in windows door rechts onder te zoeken op kladblok.
+        Open dit programma en plak dan de onderstaande code erin. Sla deze file op als index.html en open deze file dan met je browser, je ziet meteen of het is gelukt.
+        <br>
+        <br><b>&lt;html&gt;
+            &lt;body&gt;
+            &lt;h1&gt; hoofdstuk 1 &lt;/h1&gt;
+            &lt;p&gt; hoi dit is je eerste website &lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt; </b><br>
+        
+    </p>
+    <p>
+        De styling van de website doen we in een file genaamd "style.css", de afkorting css staat voor Cascading Style Sheet.
+        Daarin kun je het uiterlijk van alle links, letters en nog veel meer in een keer veranderen.
+        We bepalen in deze file bijvoorbeeld hoe een titel eruit moet zien, dit doen we door de gewenste styling aan de tag te koppelen.
+        Deze tags gebruiken we dan weer in de "index.html" we hoeven dan geen styling meer te doen want dat is al geregeld in de "style.css" file.
+        Maak een nieuwe file, plan onderstaande code erin en noem dit nieuwe bestand "style.css". 
+        <br>
+        <br><b>        
+        body {
+            font-family: sans-serif;
+            background-color: rgb(207, 181, 181);
+            text-align:center;  
+        }
+        h1 {
+            font-size: 3rem;
+            padding-top: 3rem;
+         }</b><br>
+    </p>
+    <p>
+        Niet vergeten "style.css" te linken in je html pagina anders snapt je browser het niet.
+        voeg deze link toe aan je "index.html", door deze te open met kladblok.
+        <br>
+        <br><b>
+            &lt;link rel=stylesheet href=style.css&gt;
+        </b>
+    </p>
+    <p>
+        Net als bij het lezen van een boek, kun je op internet de bladzijdes omslaan.
+        Veel Pagina's zijn met elkaar verbonden via (hyper)links.
+        Door te klikken op een link ga je naar een andere pagina.
+        Deze website heeft verschillende hoofdstukken en elk hoofdstuk is eigenlijk een html pagina.
+        Een voorbeeld van de hyperlink uit de inhoudsopgave.
+        <br>
+        <br> <b>&lt;a href="hoofdstuk-1-geschiedenis.html"&gt;Hoofdstuk 1 - De geschiendenis van software ontwikkeling&lt;/a&gt;</b> 
+    </p>
+    <p>
+        Je start met de ankertag &lt;a.
+        Met href voeg je de link naar je html pagina toe en tussen de &gt; en &lt; voeg je de naam van de link toe.
+        Een afbeelding kan je op eenzelfde manier klikbaar maken.
+        kijk maar wat er gebeurd bij hoofstuk 5 als je het spook klikt
+    </p>
 
-       <br>Niet vergeten deze file te linken in je html pagina anders snapt je browser het niet.
-       <hr>
-       <h2>koppelen en klikken</h2>
-       <br>Net als bij het lezen van een boek, kun je op internet de bladzijdes omslaan. 
-       <br>Veel Pagina's zijn met elkaar verbonden via (hyper)links. 
-       <br>Door te klikken op een link ga je naar een andere pagina.
-       <br>Deze website heeft verschillende hoofdstukken en elk hoofdstuk is eigenlijk een html pagina.
-       <br>bijvoorbeeld:
-       <br>&lt;a href="hoofdstuk-1-geschiedenis.html"&gt;Hoofdstuk 1 - De geschiendenis van software ontwikkeling&lt;/a&gt;
-       <br>Je start met de ankertag &lt;a.
-       <br>de a staat voor article/artikel.
-       <br>Met het artikel href voeg je de link naar je html pagina toe.
-       <br>Een afbeelding kan je op eenzelfde manier klikbaar maken.
-       <br>kijk maar wat er gebeurd bij hoofstuk 5 als je het spook klikt
-     </body>
+</body>
+
 </html>
