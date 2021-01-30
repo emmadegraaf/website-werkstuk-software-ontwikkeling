@@ -1,17 +1,25 @@
- body {font-size: 1,8rem;
+ body {
      font-family: sans-serif;
      background-color: rgb(207, 181, 181);
-     text-align:center;
+     text-align:center;     
  }
 
  h1 {
-     padding-top: 5rem;
-     font-size: 3rem;
+    font-size: 3rem;
+    padding-top: 3rem;
  }
 
  h2 {
-    padding-top: 4rem;
-    font-size: medium;
+    padding-top: 2rem;
+    font-size: 2rem;
+    color:#12c512;
+}
+
+ p {
+    padding-top: 1rem;
+    font-size: 1rem;
+    margin-left: 30em;
+    margin-right: 30em;
 }
 
  img {
@@ -21,9 +29,3 @@
      margin:8px; height:300px;
     }
  
-
-
-
- p {font-size: 1rem;
-     color:#12c512;
- }
