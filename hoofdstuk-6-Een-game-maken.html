@@ -10,12 +10,12 @@
   </head>
     <body style="background-color: darkblue;" onmousedown="myFunction()">
         <h1 style="color:white" >aantal keer misgeklikt: <span id="myText"></span></h1>
-        <a href="index.html">
+        <a href="index.html#section7">
         <img id="spook" style="position: absolute;" src="spook.png">
          </a>
     </body>
     <script>
-        var timer=window.setInterval(moveSpook, 1000);
+        var timer=window.setInterval(moveSpook, 500);
         function moveSpook(){
             document.getElementById("spook").style.left=Math.random()*1200+"px";
             document.getElementById("spook").style.top=Math.random()*800+"px";

@@ -10,11 +10,7 @@
         />
         <meta charset="utf-8">
         <title>emma's werkstuk</title>
-        <style>
-          html {
-            scroll-behavior: smooth;
-          }
-          </style>
+        <script defer src="woordenteller.js"></script>
       </head>
     
 
@@ -345,8 +341,10 @@
   </nav>
 
 <main>
+
   <div class="main" id="section0">
     <img src=voorkant.jpg alt="emma's logo" class="center">
+
     <h1>Voorwoord</h1>
     <p>
       Dit onderwerp heb ik gekozen omdat het mij een leuk en uitdagend onderwerp leek.
@@ -354,7 +352,7 @@
       Aan het einde van het werkstuk zou ik willen weten hoe je games maakt en hoe je een website maakt.
       Door het maken van een website en ee ngame hoop ik meer te weten komen over software ontwikkeling.
   </p>
-
+  <section>
   </div>
 
   <div class="main" id="section1">
@@ -382,6 +380,7 @@
       Dit wendbaar ontwikkelen van software wordt Agile Software development genoemd.
       Dit is de "agile methode".
     </p>
+    <section>
   </div>
   
   <div class="main" id="section2">
@@ -418,7 +417,8 @@
         De taak van de scrum master is om het process te begeleiden en te zorgen dat er volgens de Agile scrum wijze wordt gewerkt. 
         Want binnen elke "sprint" zijn er vaste gebeurtenissen die plaats vinden.
         In het volgende hoofdstuk vertel ik je hier meer over.
-    </p>
+    </p> 
+    <section>
   </div>
 
   <div class="main" id="section3">
@@ -454,6 +454,7 @@
      <ul>Wat ging minder?</ul>
      <ul>Wat spreken we af voor de volgende sprint?</ul>
     </p>
+    <section>
   </div>
 
   <div class="main" id="section4">
@@ -484,6 +485,7 @@
         In het volgende hoofdstuk gaan we samen een website maken met een eenvoudige tekst editor. 
         Dit is genoeg om aan de slag te gaan en lokaal op jouw computer een website te maken.
     </p>
+    <section>
   </div>
 
   <div class="main" id="section5">
@@ -495,60 +497,67 @@
       Tags staan altijd tussen punthaken &lt; en &gt;.
       Je kan dit zelf proberen met het programma kladblok, open dit programma in windows door rechts onder te zoeken op kladblok.
       Open dit programma en plak dan de onderstaande code erin. Sla deze file op als index.html en open deze file dan met je browser, je ziet meteen of het is gelukt.
-      <br>
-      <br><b>&lt;html&gt;
-          &lt;body&gt;
-          &lt;h1&gt; hoofdstuk 1 &lt;/h1&gt;
-          &lt;p&gt; hoi, dit is je eerste website &lt;/p&gt;
-          &lt;/body&gt;
-          &lt;/html&gt; </b><br>      
-  </p>
+    </p>
+
+     <code>
+        &lt;html&gt;
+        &lt;body&gt;
+        &lt;h1&gt; hoofdstuk 1 &lt;/h1&gt;
+        &lt;p&gt; hoi, dit is je eerste website &lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt; 
+      </code>     
+
   <p>
       De styling van de website doen we in een file genaamd "style.css", de afkorting css staat voor Cascading Style Sheet.
       Daarin kun je het uiterlijk van alle links, letters en nog veel meer in een keer veranderen.
       We bepalen in deze file bijvoorbeeld hoe een titel eruit moet zien, dit doen we door de gewenste styling aan de tag te koppelen.
       Deze tags gebruiken we dan weer in de "index.html" we hoeven dan geen styling meer te doen want dat is al geregeld in de "style.css" file.
-      Maak een nieuwe file, plan onderstaande code erin en noem dit nieuwe bestand "style.css". 
-      <br>
-      <br><b>        
-      body {
-          font-family: sans-serif;
-          background-color: rgb(207, 181, 181);
-          text-align:center;  
-      }
-      h1 {
-          font-size: 3rem;
-          padding-top: 3rem;
-       }</b><br>
+      Maak een nieuwe file, plan onderstaande code erin en noem dit nieuwe bestand "style.css".     
   </p>
+
+  <code>        
+    body {
+        font-family: sans-serif;
+        background-color: rgb(207, 181, 181);
+        text-align:center;  
+    }
+    h1 {
+        font-size: 3rem;
+        padding-top: 3rem;
+     }
+    </code>
+
   <p>
       Niet vergeten "style.css" te linken in je html pagina anders snapt je browser het niet.
       Voeg deze link toe aan je "index.html", door deze te open met kladblok.
-      <br>
-      <br><b>
-          &lt;link rel=stylesheet href=style.css&gt;
-      </b>
   </p>
+
+  <code> 
+    &lt;link rel=stylesheet href=style.css&gt;
+  </code>
+
   <p>
       Net als bij het lezen van een boek, kun je op internet de bladzijdes omslaan.
       Veel Pagina's zijn met elkaar verbonden via (hyper)links.
       Door te klikken op een link ga je naar een andere pagina.
-      Deze website heeft verschillende hoofdstukken en elk hoofdstuk is eigenlijk een html pagina.
-      Een voorbeeld van de hyperlink uit de inhoudsopgave.
-      <br>
-      <br> <b>&lt;a href="hoofdstuk-1-geschiedenis.html"&gt;Hoofdstuk 1 - De geschiendenis van software ontwikkeling&lt;/a&gt;</b> 
+      Een voorbeeld van een hyper link uit het volgende hoofdstuk.
   </p>
-  <p>
-      Je start met de ankertag &lt;a.
-      Met href voeg je de link naar je html pagina toe en tussen de &gt; en &lt; voeg je de naam van de link toe.
-      Een afbeelding kan je op eenzelfde manier klikbaar maken.
-      kijk maar wat er gebeurd bij hoofstuk 6 als je het spook klikt.
-  </p>
+      <code> 
+        &lt;a href=hoofdstuk-6-Een-game-maken.html&gt;spelen&lt;/a&gt;
+      </code>
+
+      <p>Je start met de ankertag &lt;a.
+        Met href voeg je de link naar je html pagina toe en tussen de &gt; en &lt; voeg je de naam van de link toe.
+        Een afbeelding kan je op eenzelfde manier klikbaar maken.
+      </p>
+      <section>
   </div>
 
   <div class="main" id="section6">
     <h1>Hoofdstuk 6 Een game maken</h1>
     <h2>Beweging toevoegen met javascript.</h2>
+    <section>
     <p>
         Om onze eigen game te programmeren, moeste we een paar nieuwe technieken leren.
         Ten eerste moesten we een afbeeldingen toevoegen aan het scherm.
@@ -562,12 +571,12 @@
     </p>
     <p>
         Het javascript deel start altijd met <b>&lt;script&gt;</b>
-        We hebben een script geschreven om de score bij te houden.
-        En we hebben een script geschreven om de klikbare afbeelding te laten bewegen.
+        We hebben een script geschreven om de score bij te houden en we hebben een script geschreven om de klikbare afbeelding te laten bewegen.
         Als er op weet te klikken kom hier weer terug.
-        <ul>Je kan de code hier <i><a href=https://github.com/emmadegraaf/website-werkstuk-software-ontwikkeling/blob/master/hoofdstuk-6-Een-game-maken.html>bekijken</a></i></ul>
+        <ul>Je kan de code hier <i><a href=https://github.com/emmadegraaf/website-werkstuk-software-ontwikkeling/blob/master/hoofdstuk-6-Een-game-maken.html target="_blank" rel="noopener noreferrer">bekijken</a></i></ul>
         <ul>De game kan je hier <i><a href=hoofdstuk-6-Een-game-maken.html>spelen</a></i> </ul>
     </p>
+    <section>
   </div>
 
   <div class="main" id="section7">
@@ -582,28 +591,31 @@
        Het debuggen van de game was wel lastig, maar uiteindelijk lukte toch.
        De "Februari versie" heeft veel geleend van andere ontwikkelaars, zie de gebruikt websites, maar dat mag bij software ontwikkeling.
        Je hoeft het wiel niet opnieuw uit te vinden maar je moet het wel kunnen repareren.
-       Ik heb bij de laatste versie hulp gekregen van mijn vader, die software tester is.
+       Ik heb bij de laatste versie hulp gekregen van mijn vader, die software tester is en dus veel aan software ontwikkeling doet.
        Hij heeft mij geholpen met dit project en hij kan nu ook webistes maken en aanpassen.
+      </p>
+      <p>Als hier klikt vlieg je je weer helemaal terug naar het <a href="#section0">voorwoord</a></p>
+      
+      aantal woorden: <woordenteller></woordenteller>
 
 
-    </p>
+
     <h2>gebruikte boeken:</h2>
     <p>
-    <ul>Websites bouwen met html</ul>
-    <ul>Programmeren voor kinderen</ul>
-    <ul>Games bouwen met javascript deel 1</ul>
-    <ul>Games bouwen met javascript deel 2</ul>
-    </p>
+    <ul><i><a href=https://www.schoolmaterialen.nl/generation-code-websites-bouwen-met-html target="_blank" rel="noopener noreferrer">Websites bouwen met html</a></i></ul>
+    <ul><i><a href=https://www.schoolmaterialen.nl/generation-code-games-bouwen-met-javascript-deel-1 target="_blank" rel="noopener noreferrer"> Games bouwen met javascript deel 1</a></i></ul>
+    <ul><i><a href=https://www.schoolmaterialen.nl/generation-code-games-bouwen-met-javascript-deel-2 target="_blank" rel="noopener noreferrer">Games bouwen met javascript deel 2</a></i></ul>
+    <ul><i><a href=https://www.lannoo.be/nl/programmeren-voor-kinderen target="_blank" rel="noopener noreferrer">Programmeren voor kinderen</a></i></ul>
     <h2>gebruikte websites:</h2>
     <p>
-    <ul> <i><a href=https://fireship.io/lessons/css-responsive-icon-navbar>fireship.io</a></i></ul>
-    <ul> <i><a href=https://www.w3schools.com/howto/howto_css_smooth_scroll.asp>www.w3schools.com</a></i></ul>
-    <ul> <i><a href=https://pages.github.com>pages.github.com/</a></i></ul>
-  </p>
-   <p>
-    <ul>Als hier klikt ga je terug naar <a href="#section0">boven</a></ul>
-    </p>
+    <ul> <i><a href=https://fireship.io/lessons/css-responsive-icon-navbar target="_blank" rel="noopener noreferrer">fireship.io</a></i></ul>
+    <ul> <i><a href=https://www.w3schools.com/howto/howto_css_smooth_scroll.asp target="_blank" rel="noopener noreferrer">www.w3schools.com</a></i></ul>
+    <ul> <i><a href=https://pages.github.com target="_blank" rel="noopener noreferrer">pages.github.com</a></i></ul>
+    <ul> <i><a href=https://stackoverflow.com/questions/33056681/count-number-of-words-in-html-paragraphs target="_blank" rel="noopener noreferrer">stackoverflow.com</i></ul>
     
+  </p>
+
+  <section>
   </div>
 
 </main>
