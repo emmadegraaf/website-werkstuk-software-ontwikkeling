@@ -128,14 +128,11 @@
   }
 
 
-
   /*
   Position the Navbar
   */
   main {
-
     margin-left: 5rem;
-
     padding: 1rem;
   }
 
@@ -143,6 +140,11 @@
     position: fixed;
     background-color: var(--bg-primary);
     transition: width 600ms ease;
+    overflow: scroll;
+  }
+
+  .navbar::-webkit-scrollbar {
+    width: 0rem;
   }
   
   .navbar-nav {
@@ -209,7 +211,11 @@
   }
   
 
-
+  .basic-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+ }
   /*
   Animate the Logo
   */
@@ -338,7 +344,7 @@
     animation: cardEntrance 700ms ease-out;
     animation-fill-mode: backwards;
   }
-  
+
   .card:nth-child(1) {
     grid-area: a;
     animation-delay: calc(1 * var(--stagger-delay));
