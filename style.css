@@ -323,7 +323,7 @@
     grid-template-rows: repeat(4, 25%);
     grid-template-columns: 240px auto auto 240px;
   
-    --stagger-delay: 100ms;
+    --stagger-delay: 300ms;
   }
   
   @keyframes cardEntrance {
@@ -343,7 +343,27 @@
     background-color: rgb(36, 243, 147);
     animation: cardEntrance 700ms ease-out;
     animation-fill-mode: backwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+    font-size: 3rem;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
+
+  .card:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+ }
 
   .card:nth-child(1) {
     grid-area: a;
@@ -397,4 +417,3 @@
     grid-area: 🌟;
     animation-delay: calc(13 * var(--stagger-delay));
   }
-  
