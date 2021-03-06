@@ -20,29 +20,6 @@
 
   
   /*
-  grid
-  */
-  .post {
-    display: grid;
-    grid-template-columns: minmax(5rem, 1fr) minmax(auto, 64ch) minmax(5rem, 1fr);
-  }
-  
-  /* position text paragraphs into the second (middle) column */
-  h1, h2, ul, code, p {
-    grid-column: 2;
-  }
-  
-  /* position images to take up all three columns */
-  img {
-    grid-column: 1/4;
-    width: 100%;
-    max-width: 100ch;
-    justify-self: center;
-  }
-
-
-
-  /*
   sections
   */
   section { 
@@ -131,11 +108,6 @@
   /*
   Position the Navbar
   */
-  main {
-    margin-left: 5rem;
-    padding: 1rem;
-  }
-
   .navbar {
     position: fixed;
     background-color: var(--bg-primary);
@@ -211,11 +183,6 @@
   }
   
 
-  .basic-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
- }
   /*
   Animate the Logo
   */
@@ -274,6 +241,19 @@
   
     main {
       margin: 0;
+    }    
+    .post {
+      display: grid;
+      grid-template-columns: minmax(1rem, 1fr) minmax(auto, 64ch) minmax(1rem, 1fr);
+    }
+    h1, h2, ul, code, p {
+      grid-column: 2;
+    }
+    img {
+      grid-column: 1/4;
+      width: 100%;
+      max-width: 100ch;
+      justify-self: center;
     }
   }
   
@@ -302,7 +282,52 @@
     {
       left: 0px;
     }
+  
+  /*
+  grid
+  */
+  .post {
+    display: grid;
+    grid-template-columns: minmax(5rem, 1fr) minmax(auto, 64ch) minmax(5rem, 1fr);
   }
+  
+  /* position text paragraphs into the second (middle) column */
+  h1, h2, ul, code, p {
+    grid-column: 2;
+  }
+  
+  /* position images to take up all three columns */
+  img {
+    grid-column: 1/4;
+    width: 100%;
+    max-width: 100ch;
+    justify-self: center;
+  }
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   /*animated grid*/
