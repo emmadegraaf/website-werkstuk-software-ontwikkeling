@@ -23,7 +23,7 @@
   sections
   */
   section { 
-    height: 90vh; 
+    height: 100vh; 
   }
 
 
@@ -288,17 +288,37 @@
   */
   .post {
     display: grid;
-    grid-template-columns: minmax(5rem, 1fr) minmax(auto, 64ch) minmax(5rem, 1fr);
+    grid-template-columns: minmax(27rem, 1fr) minmax(auto, 100ch) minmax(27rem, 1fr);
   }
   
   /* position text paragraphs into the second (middle) column */
-  h1, h2, ul, code, p {
+  h1 {
     grid-column: 2;
+    justify-self: center;
+  }
+  h2 {
+    grid-column: 2;
+    justify-self: center;
+    /* 
+    color: #df49a6;
+    */ 
+    color: #ff7eee;
+  }
+
+  ul {
+    grid-column: 2;
+    column-count: 1;
+    column-gap: 2em;
+  }
+ code, p {
+    grid-column: 2;
+    column-count: 2;
+    column-gap: 2em;
   }
   
   /* position images to take up all three columns */
   img {
-    grid-column: 1/4;
+    grid-column: 2;
     width: 100%;
     max-width: 100ch;
     justify-self: center;
