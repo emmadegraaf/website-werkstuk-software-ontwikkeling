@@ -325,49 +325,30 @@
   }
 
 
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   /*animated grid*/
   .animated-grid {
     height: 85vh;
+    justify-self: center;
+    margin-left: 6rem;
+    margin-right: 1rem;
+    margin-top: 20px;
     margin-bottom: 200px;
+
   
     display: grid;
     gap: 1rem;
   
     /* Explicit grid */
     grid-template-areas:
-      'a  b  c  d'
-      'l  🌟 🌟 e'
-      'k  🌟 🌟 f'
-      'j  i  h  g';
+      ' a  b  c  d '
+      ' l  🌟 🌟 e '
+      ' k  🌟 🌟 f '
+      ' j  i  h  g ';
   
     grid-template-rows: repeat(4, 25%);
-    grid-template-columns: 240px auto auto 240px;
-  
+    grid-template-columns: 240px auto auto 240px ;
+
+
     --stagger-delay: 300ms;
   }
   
@@ -385,7 +366,7 @@
   }
   
   .card {
-    background-color: rgb(36, 243, 147);
+    background-color: white;
     animation: cardEntrance 700ms ease-out;
     animation-fill-mode: backwards;
     display: flex;
@@ -462,3 +443,4 @@
     grid-area: 🌟;
     animation-delay: calc(13 * var(--stagger-delay));
   }
+}
